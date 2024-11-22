@@ -38,16 +38,13 @@ header{
 }
 
 .logo{
-    font-size: 3rem;
-    color: cyan;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.5s ease;
+    
+        width: 50px; /* Adjust width as needed */
+        height: 50px; /* Maintains aspect ratio */
+      
 }
 
-.logo:hover{
-    transform: scale(1.1);
-}
+
 
 nav a{
     font-size: 1.8rem;
@@ -137,7 +134,7 @@ span{
 .home-img img{
     position: relative;
     width: 32vw;
-    border-radius: 50%;
+    border-radius: 0%;
     box-shadow: 0 0 25px solid cyan;
     cursor: pointer;
     transition: 0.2s linear;
@@ -226,19 +223,19 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "";
+        content: "Strong execution";
     }
     21%, 40%{
-        content: "";
+        content: "90% UNC";
     }
     41%, 60%{
-        content: "";
+        content: "Deep Injector";
     }
     61%, 80%{
-        content: "";
+        content: "High Fuction";
     }
     81%, 100%{
-        content: "";
+        content: "24/7 Support";
     }
 }
 
