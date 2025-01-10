@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nam Executor V3</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #fff;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Transparent Top Bar */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0); /* Transparent background */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-start; /* Align items to the left */
+            align-items: center; /* Vertically center the logo and text */
+        }
+
+        .navbar .logo {
+            margin-right: 10px; /* Space between the logo and the link */
+        }
+
+        .navbar .logo img {
+            width: 50px; /* Adjust the size of the logo */
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .navbar a:hover {
+            color: #007bff;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 20px;
+            background-image: url('https://i.pinimg.com/originals/18/03/0b/18030b06cb33fcedf337bf6dc9b9473f.gif'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 600px;
+            position: relative;
+            margin-top: 50px; /* Added space for the transparent navbar */
+        }
+
+        .hero .content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .cta {
+            background: #789DE5;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .hero .cta:hover {
+            background: #789DE5;
+        }
+
+        .app-image {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .app-image img {
+            width: 600px;
+            border-radius: 15px;
+        }
+
+        /* Cards Section */
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 50px;
+            background: #2c2f38;
+            text-align: center;
+        }
+
+        .card {
+            background: #1d1f27;
+            border-radius: 10px;
+            width: 30%;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card img {
+            width: 60px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #121212;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer a {
+            color: #789DE5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero .content {
+                margin-bottom: 20px;
+            }
+
+            .card-container {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .app-image img {
+                width: 250px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Transparent Navigation Bar -->
+    <div class="navbar">
+        <!-- Logo on the left -->
+        <div class="logo">
+            <img src="Nam executor.png" alt="Logo">
+        </div>
+        <!-- Links on the right -->
+        <ul>
+            <li><a href="#">Home</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="content">
+            <h1>Nam Executor V3</h1>
+            <p>Your Ultimate roblox executor :></p>
+            <a href="download-link" class="cta">Downloads</a>
+        </div>
+        <div class="app-image">
+            <img src="executor.png" alt="App Image" sizes="10">
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="card-container">
+        <div class="card">
+            <img src="Windows.svg" alt="Feature Icon">
+            <h3>Windows</h3>
+            <p>We support Windows User with the most keyless Executor ever!</p>
+        </div>
+        <div class="card">
+            <img src="key.svg" alt="Feature Icon">
+            <h3>Securce</h3>
+            <p>Enjoy Nam Executor without any rat or viruses!</p>
+        </div>
+        <div class="card">
+            <img src="exec.svg" alt="Feature Icon">
+            <h3>Editor</h3>
+            <p>Nam Executor using good monaco editor for the best scripting exprerience!!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 XYZ App. All rights reserved. <br><a href="https://your-privacy-policy-link.com">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
